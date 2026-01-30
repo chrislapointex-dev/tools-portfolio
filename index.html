@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Tools by Chris L.</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            padding: 40px 20px;
+        }
+        .container { max-width: 1200px; margin: 0 auto; }
+        header { text-align: center; margin-bottom: 50px; }
+        h1 { 
+            font-size: 3rem; 
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+        .subtitle { color: #888; font-size: 1.2rem; }
+        .category { margin-bottom: 40px; }
+        .category h2 { 
+            color: #667eea; 
+            margin-bottom: 20px; 
+            font-size: 1.5rem;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .tool-card {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 12px;
+            padding: 25px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .tool-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
+            border-color: #667eea;
+        }
+        .tool-card h3 { 
+            font-size: 1.3rem; 
+            margin-bottom: 10px;
+            color: #fff;
+        }
+        .tool-card p { 
+            color: #aaa; 
+            margin-bottom: 15px;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+        .tool-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: opacity 0.2s;
+        }
+        .tool-link:hover { opacity: 0.9; }
+        .github-link {
+            margin-left: 10px;
+            color: #888;
+            text-decoration: none;
+        }
+        .github-link:hover { color: #fff; }
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        footer a { color: #667eea; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🛠️ Free Tools</h1>
+            <p class="subtitle">Open source utilities built for real people solving real problems</p>
+        </header>
+
+        <div class="category">
+            <h2>🧠 Productivity & Focus</h2>
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <h3>🎯 Task Sniper</h3>
+                    <p>ADHD-friendly task picker. Brain dump, then snipe ONE task at random. Stop paralysis, start doing.</p>
+                    <a href="https://chrislapointex-dev.github.io/task-sniper/" class="tool-link">Launch</a>
+                    <a href="https://github.com/chrislapointex-dev/task-sniper" class="github-link">GitHub</a>
+                </div>
+                <div class="tool-card">
+                    <h3>⏱️ Focus Timer</h3>
+                    <p>Dead-simple Pomodoro timer. 25 minutes of focus, no distractions.</p>
+                    <a href="https://chrislapointex-dev.github.io/focus-timer/" class="tool-link">Launch</a>
+                    <a href="https://github.com/chrislapointex-dev/focus-timer" class="github-link">GitHub</a>
+                </div>
+                <div class="tool-card">
+                    <h3>📊 Daily Check-In</h3>
+                    <p>Track your mood and mental health with simple daily check-ins.</p>
+                    <a href="https://chrislapointex-dev.github.io/daily-checkin/" class="tool-link">Launch</a>
+                    <a href="https://github.com/chrislapointex-dev/daily-checkin" class="github-link">GitHub</a>
+                </div>
+                <div class="tool-card">
+                    <h3>⏰ Event Countdown</h3>
+                    <p>Countdown timers for your important events.</p>
+                    <a href="https://chrislapointex-dev.github.io/event-countdown/" class="tool-link">Launch</a>
+                    <a href="https://github.com/chrislapointex-dev/event-countdown" class="github-link">GitHub</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2>⚖️ Legal & Medical</h2>
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <h3>⚖️ Court Deadline Tracker</h3>
+                    <p>Never miss a filing deadline. Built for self-represented litigants.</p>
+                    <a href="https://chrislapointex-dev.github.io/court-deadline-tracker/" class="tool-link">Launch</a>
+                    <a href="https://github.com/chrislapointex-dev/court-deadline-tracker" class="github-link">GitHub</a>
+                </div>
+                <div class="tool-card">
+                    <h3>💊 Medication Safety Card</h3>
+                    <p>Generate a wallet card with your medications, allergies, and conditions.</p>
+                    <a href="https://chrislapointex-dev.github.io/medication-safety-card/" class="tool-link">Launch</a>
+                    <a href="https://github.com/chrislapointex-dev/medication-safety-card" class="github-link">GitHub</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2>💼 Business</h2>
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <h3>🧾 Quick Invoice</h3>
+                    <p>Generate professional invoices in seconds. Export to PDF.</p>
+                    <a href="https://chrislapointex-dev.github.io/quick-invoice/" class="tool-link">Launch</a>
+                    <a href="https://github.com/chrislapointex-dev/quick-invoice" class="github-link">GitHub</a>
+                </div>
+                <div class="tool-card">
+                    <h3>📱 QR Business Card</h3>
+                    <p>Create digital business cards with QR codes. vCard format.</p>
+                    <a href="https://chrislapointex-dev.github.io/qr-business-card/" class="tool-link">Launch</a>
+                    <a href="https://github.com/chrislapointex-dev/qr-business-card" class="github-link">GitHub</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2>🔧 Developer Tools</h2>
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <h3>🔧 JSON Tool</h3>
+                    <p>Format and validate JSON instantly.</p>
+                    <a href="https://chrislapointex-dev.github.io/json-tool/" class="tool-link">Launch</a>
+                    <a href="https://github.com/chrislapointex-dev/json-tool" class="github-link">GitHub</a>
+                </div>
+                <div class="tool-card">
+                    <h3>🔍 Regex Tester</h3>
+                    <p>Test your regular expressions with live feedback.</p>
+                    <a href="https://chrislapointex-dev.github.io/regex-tester/" class="tool-link">Launch</a>
+                    <a href="https://github.com/chrislapointex-dev/regex-tester" class="github-link">GitHub</a>
+                </div>
+                <div class="tool-card">
+                    <h3>📝 Text Diff</h3>
+                    <p>Compare two texts side by side.</p>
+                    <a href="https://chrislapointex-dev.github.io/text-diff/" class="tool-link">Launch</a>
+                    <a href="https://github.com/chrislapointex-dev/text-diff" class="github-link">GitHub</a>
+                </div>
+                <div class="tool-card">
+                    <h3>📐 Unit Converter</h3>
+                    <p>Convert between units instantly.</p>
+                    <a href="https://chrislapointex-dev.github.io/unit-converter/" class="tool-link">Launch</a>
+                    <a href="https://github.com/chrislapointex-dev/unit-converter" class="github-link">GitHub</a>
+                </div>
+                <div class="tool-card">
+                    <h3>🎨 Color Palette</h3>
+                    <p>Generate beautiful color palettes for your projects.</p>
+                    <a href="https://chrislapointex-dev.github.io/color-palette/" class="tool-link">Launch</a>
+                    <a href="https://github.com/chrislapointex-dev/color-palette" class="github-link">GitHub</a>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>All tools are open source and 100% private (data stays in your browser).</p>
+            <p style="margin-top: 10px;">Built by <a href="https://github.com/chrislapointex-dev">Chris L.</a> with 💜</p>
+        </footer>
+    </div>
+</body>
+</html>
